@@ -1,0 +1,8 @@
+pushup,
+barbell-bench-press,
+single-arm-dumbbell-chest-press,
+inner-chest-combo,
+dumbbell-crassover,
+reversegrip-bench-press,
+decline-bench-press,
+closegrip-dumbell-pushup
