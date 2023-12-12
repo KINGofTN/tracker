@@ -1,0 +1,91 @@
+
+CREATE TABLE "main-back-data" (
+	"day"	INTEGER UNIQUE,
+	"date"	INTEGER NOT NULL UNIQUE,
+	"week"	TEXT DEFAULT 'week2',
+	"w-repeat-in-w-no"	INTEGER DEFAULT 2,
+	"start-time"	INTEGER DEFAULT '3.00pm',
+	"full-time"	INTEGER DEFAULT '1hour',
+	"max-rest-min"	TEXT DEFAULT '2mins',
+	"min-rest-min"	TEXT DEFAULT '1mins',
+	"total-workout"	INTEGER DEFAULT 6,
+	"workoutname"	TEXT DEFAULT '1.pushup,2.barbell-dead-lift,3.barbell-row,4.dumbbell-row,5.t-bar-row,6.dumbbell-pullover',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);
+
+CREATE TABLE "pushup" (
+	"day"	INTEGER UNIQUE,
+	"sets"	INTEGER DEFAULT 3,
+	"reps"	INTEGER DEFAULT 15,
+	"set1-kg"	INTEGER DEFAULT 0,
+	"set2-kg"	INTEGER DEFAULT 0,
+	"set3-kg"	INTEGER DEFAULT 0,
+	"set4-kg"	INTEGER DEFAULT 0,
+	"set5-kg"	INTEGER DEFAULT 0,
+	"real-reps" INTEGER DEFAULT '15,15,15',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);
+
+CREATE TABLE "barbell-dead-lift" (
+	"day"	INTEGER UNIQUE,
+	"sets"	INTEGER DEFAULT 3,
+	"reps"	INTEGER DEFAULT 15,
+	"set1-kg"	INTEGER DEFAULT 20,
+	"set2-kg"	INTEGER DEFAULT 25,
+	"set3-kg"	INTEGER DEFAULT 30,
+	"set4-kg"	INTEGER DEFAULT 0,
+	"set5-kg"	INTEGER DEFAULT 0,
+	"real-reps" INTEGER DEFAULT '15,15,15',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);
+
+CREATE TABLE "barbell-row" (
+	"day"	INTEGER UNIQUE,
+	"sets"	INTEGER DEFAULT 3,
+	"reps"	INTEGER DEFAULT 15,
+	"set1-kg"	INTEGER DEFAULT 15,
+	"set2-kg"	INTEGER DEFAULT 20,
+	"set3-kg"	INTEGER DEFAULT 25,
+	"set4-kg"	INTEGER DEFAULT 0,
+	"set5-kg"	INTEGER DEFAULT 0,
+	"real-reps" INTEGER DEFAULT '15,15,15',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);
+
+CREATE TABLE "dumbbell-row" (
+	"day"	INTEGER UNIQUE,
+	"sets"	INTEGER DEFAULT 3,
+	"reps"	INTEGER DEFAULT 15,
+	"set1-kg"	INTEGER DEFAULT 10,
+	"set2-kg"	INTEGER DEFAULT 10,
+	"set3-kg"	INTEGER DEFAULT 10,
+	"set4-kg"	INTEGER DEFAULT 0,
+	"set5-kg"	INTEGER DEFAULT 0,
+	"real-reps" INTEGER DEFAULT '15,15,15',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);
+
+CREATE TABLE "t-bar-row" (
+	"day"	INTEGER UNIQUE,
+	"sets"	INTEGER DEFAULT 3,
+	"reps"	INTEGER DEFAULT 15,
+	"set1-kg"	INTEGER DEFAULT 12.5,
+	"set2-kg"	INTEGER DEFAULT 17.5,
+	"set3-kg"	INTEGER DEFAULT 17.5,
+	"set4-kg"	INTEGER DEFAULT 0,
+	"set5-kg"	INTEGER DEFAULT 0,
+	"real-reps" INTEGER DEFAULT '15,15,15',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);
+CREATE TABLE "dumbbell-pullover" (
+	"day"	INTEGER UNIQUE,
+	"sets"	INTEGER DEFAULT 3,
+	"reps"	INTEGER DEFAULT 15,
+	"set1-kg"	INTEGER DEFAULT 10,
+	"set2-kg"	INTEGER DEFAULT 10,
+	"set3-kg"	INTEGER DEFAULT 10,
+	"set4-kg"	INTEGER DEFAULT 0,
+	"set5-kg"	INTEGER DEFAULT 0,
+	"real-reps" INTEGER DEFAULT '15,15,15',
+	PRIMARY KEY("day" AUTOINCREMENT)
+);

@@ -1,2 +1,6 @@
-1.sjsj
-2.88ukk
+pushup,
+barbell-dead-lift,
+barbell-row,
+dumbbell-row,
+t-bar-row,
+dumbbell-pullover

@@ -1,0 +1,8 @@
+barbell-bicep-curl,
+longbarbell-curl,
+dumble-bicep-curl,
+single-dumbbell-bicep-curl,
+dumbbell-hammer-curl
+
+
+

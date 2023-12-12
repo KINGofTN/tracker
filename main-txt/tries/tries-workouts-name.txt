@@ -1,0 +1,5 @@
+pushup,
+skull-crushers,
+closegrip-tries-press,
+tricep-kickback,
+standing-overhead-d-extension,
